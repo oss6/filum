@@ -1,0 +1,4 @@
+(library
+  (public_name filum)
+  (name filum)
+  (libraries base re2))

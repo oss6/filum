@@ -1,0 +1,3 @@
+# filum
+
+> String manipulation library
