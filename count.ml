@@ -7,3 +7,7 @@ let count_substrings s ~substring =
     else _inner (Chop.last s ~len:(String.length s - 1)) (acc + (if String.is_prefix s ~prefix:substring then 1 else 0))
   in
   _inner s 0
+
+let count_where s ~f =
+  String.to_list s
+  |> List.count ~f:f
