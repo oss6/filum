@@ -2,11 +2,11 @@ open Base
 open Re2
 
 let escape_characters_map = [
-  ("<", "&lt;"),
-  (">", "&gt;"),
-  ("&", "&amp;"),
-  ("\"", "&quot;"),
-  ("'", "&#x27;"),
+  ("<", "&lt;");
+  (">", "&gt;");
+  ("&", "&amp;");
+  ("\"", "&quot;");
+  ("'", "&#x27;");
   ("`", "&#x60;")
 ]
 
@@ -18,5 +18,5 @@ let escape_html s =
       ~equal:String.equal
       (Match.get_exn x ~sub:(`Index 0))
   )
-  (create_exn "[<>&\"'`]+")
+  (create_exn "[<>&\"'`]")
   s
