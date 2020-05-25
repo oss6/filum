@@ -1,1 +1,1 @@
-val count_substrings : string -> substring:string -> string
+val count_substrings : string -> substring:string -> int
