@@ -20,3 +20,5 @@ let escape_html s =
   )
   (create_exn "[<>&\"'`]")
   s
+
+let unescape_html s = failwith "not implemented"
